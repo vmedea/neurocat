@@ -13,7 +13,7 @@ As far as I'm aware this is the world's first text-to-colored-text model 😊.
 - A terminal supporting true color (pretty much any, these days).
 - `numpy`
 
-To generate the word database, `pytorch` (preferably with GPU, but if you're patient it can work on CPU) and Huggingface's `transformers` are required. After generating the word database these aren't necessary anymore.
+To generate the word database, `pytorch` (preferably with GPU, but if you're patient it can work on CPU) and Huggingface's `transformers` are required. After generating the word database these aren't necessary anymore, unless you want to add further words.
 
 ## How does it work?
 
@@ -24,6 +24,8 @@ The program uses the ViT-L/14 CLIP model, but it would likely work with other ve
 Not all words have a strong association to specific colors. Often, you'll see the cliche red/teal color scheme, or random colors all over the place.
 
 ## Building the word database
+
+**NOTE**: You can skip this step by downloading the [pre-generated word database](https://github.com/vmedea/neurocat/releases/download/dummy/word-embeddings.db.xz). The file `word-embeddings.db.xz` contains pre-generated CLIP ViT-L/14 embeddings for many English words in neurocat's sqlite3 format. To use this example database, `unxz` it and place it in the `data` folder.
 
 Running the CLIP model for every encountered word would be ludicrously inefficient. For this reason, the program uses a database of stored text embeddings.
 
