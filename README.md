@@ -2,7 +2,7 @@
 
 ![screenshot of the command-line utility neurocat](doc/screenshots/screenshot.webp)
 
-`neurocat` is an utility similar to `lolcat` for coloring text in the terminal. The twist is that it uses the CLIP model (a neural network trained on image-text pairs) associations to generate a color scheme for words.
+`neurocat` is an utility similar to `lolcat` for coloring text in the terminal. The twist is that it uses the CLIP model (a neural network trained on image-text pairs) associations to generate a color scheme for words. Artificial synesthesia, if you will.
 
 There's some resemblance to the text effects of some old MUDs, except fully automatic!
 
@@ -71,6 +71,10 @@ Usage:
 ./neurocat_spectrum.py amethyst
 ```
 
+## Further ideas
+
+Instead of the word level, it's also possible to do this on the token level by using the output of the first hidden layer instead of CLIP's final output. To go even further, with multiple words at a time it's possible to show inter-word associations e.g. then "blue butterfly" shows both words in blue-ish, and "yellow butterfly" both words in yellow. The problem is that it's not as amendable to memorization that way, and requires a lot more resources. So I haven't added it here.
+
 ## Etcetera
 
-This software doesn't come with any promise of usefulness of any kind. It's for amusement only.
+This software doesn't come with any promise of usefulness of any kind. It's for amusement only. The output reflects the biases of the underlying model (and in turn, that of its training set), not those of the author.
