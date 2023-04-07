@@ -77,6 +77,13 @@ Usage:
 
 Instead of the word level, it's also possible to do this on the token level by using the output of the first hidden layer instead of CLIP's final output. To go even further, with multiple words at a time it's possible to show inter-word associations e.g. then "blue butterfly" shows both words in blue-ish, and "yellow butterfly" both words in yellow. The problem is that it's not as amendable to memorization that way, and requires a lot more resources. So I haven't added it here.
 
+## See also
+
+- [Steering Stable Diffusion: Taking a Walk in the Color Spectrum](https://medium.com/@liisaratsep/steering-stable-diffusion-taking-a-walk-in-the-color-spectrum-c90e0f925827)
+- [Using CLIP and Gradio to assess similarity between text prompts and ranges of colors](https://heartbeat.comet.ml/using-clip-and-gradio-to-assess-similarity-between-text-prompts-and-ranges-of-colors-a9a8fc0b0a08)
+- [“Does it come in black?” CLIP-like models are zero-shot recommenders](https://arxiv.org/abs/2204.02473)
+- [Emergent color categorization in a neural network trained for object recognition](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9797187/)
+
 ## Etcetera
 
 This software doesn't come with any promise of usefulness of any kind. It's for amusement only. The output reflects the biases of the underlying model (and in turn, that of its training set), not those of the author.
